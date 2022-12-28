@@ -1,0 +1,121 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block content %}
+      <h1 class="text-white p-5 text-center">Ejercicios basicos</h1>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static '/images/Pullup.gif'%}" class="card-img-top" alt="Dominada">
+              <a title="Pull up" href="https://www.youtube.com/watch?v=eGo4IYlbE5g">Video detallado aca!</a>
+              <div class="card-body">
+                <h5 class="card-title">Pull up(dominada)</h5>
+                <span class = "hide" id="hidePullup">
+                <p class="texto" id="texto1"> Son sin duda uno de los grandes ejercicios para el tren superior, de hecho son prácticamente un básico para construir nuestras espaldas y bíceps.Para realizar correctamente este ejercicio lo primero es tener una barra y seleccionar el tipo de agarre con el que vamos a realizarlo. Puede ser agarre prono (palmas hacia delante), agarre neutro o agarre supino (palmas mirando hacia ti mismo).El ideal para desarrollar fuerza será el neutro, y 
+                  para hipertrofia lo ideal es ir variando entre todos los agarres para atacar al músculo desde varias perspectivas.</p>
+                </span>
+                <button class="leermasbtn" id ="boton1">Leer mas...</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'images/dip.gif'%}" class="card-img-top" alt="Fondo">
+              <a title="Dip" href="https://www.youtube.com/watch?v=2z8JmcrW-As">Video detallado aca!</a>
+              <div class="card-body">
+                <h5 class="card-title">Dip(Fondo)</h5>
+                <span class = "hide" id="hideDip">
+                <p class="texto" id="texto2">El fondo es un ejercicio usado en el entrenamiento de la fuerza. Los fondos realizados con los brazos a 
+                  la anchura de los hombros desarrollan principalmente los tríceps, junto con músculos sinergísticos como los deltoides, 
+                  los pectorales (esternales, claviculares y menores) y los músculos romboides de la espalda (en este mismo orden).</p>
+                </span>
+                <button class="leermasbtn" id ="boton2">Leer mas...</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static '/images/pushup.gif'%}" class="card-img-top" alt="Flexión de brazos">
+              <a title="Push up" href="https://www.youtube.com/watch?v=IODxDxX7oi4">Video detallado aca!</a>
+              <div class="card-body">
+                <h5 class="card-title">Push up(Flexión de brazos)</h5>
+                <span class = "hide" id="hidePush">
+                <p class="texto" id="texto3">Es un ejercicio físico realizado estando en posición inclinada, recostado hacia abajo, 
+                  levantando el cuerpo únicamente con los brazos y bajando de nuevo al suelo.Está dedicado al desarrollo de los músculos pectoral y tríceps con beneficios adicionales para los deltoides, el serrato anterior, el coracobraquial e isométricamente el abdomen. 
+                  Dependiendo del tipo de flexión su acción puede estar más focalizada en los pectorales, los deltoides o los tríceps.</p>
+                </span>
+                <button class="leermasbtn" id ="boton3">Leer mas...</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="row">
+            <div class="col-sm">
+              <div class="card" style="width: 18rem;">
+                <img src="{% static '/images/australian-pull-ups-gif.gif'%}" class="card-img-top" alt="Dominada australiana">
+                <a title="Australian" href="https://www.youtube.com/watch?v=MsbuMHzBqgE">Video detallado aca!</a>
+                <div class="card-body">
+                  <h5 class="card-title">Australian pull ups(Dominadas australianas)</h5>
+                  <span class = "hide" id="hideAustralian">
+                  <p class="texto" id = "texto4"><b>Las Dominadas Australianas</b> o Remo con Peso Corporal es un ejercicio de calistenia para espalda cuyo objetivo principal suele ser trabajar la resistencia. 
+                    Este ejercicio cambia el ángulo de tirón vertical de una dominada tradicional a un tirón horizontal.</p>
+                  </span>
+                  <button class="leermasbtn" id ="boton4">Leer mas...</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card" style="width: 18rem;">
+                <img src="{% static '/images/DB-Goblet-Squat-opt.gif'%}" class="card-img-top" alt="Sentadilla">
+                <a title="Squat" href="https://www.youtube.com/watch?v=gsNoPYwWXeM">Video detallado aca!</a>              
+                <div class="card-body">
+                  <h5 class="card-title">Squat(sentadilla)</h5>
+                  <span class = "hide" id="hideSquat">
+                  <p class="texto" id="texto5">Un ejercicio de sentadillas con peso corporal requiere poco espacio y ningún equipo. Después de ponerse en cuclillas, 
+                    el deportista se pone de pie nuevamente mientras mueve los brazos hacia los costados. La altura de la sentadilla se puede ajustar más alto o más bajo dependiendo de los requisitos del individuo, es decir, si alguien no está acostumbrado a hacer ejercicio, se pueden realizar sentadillas de media o cuarta parte. Debido a su rango de movimiento, 
+                    las sentadillas se consideran con frecuencia entre los ejercicios más efectivos para mejorar la fuerza y la resistencia.</p>
+                  </span>
+                  <button class="leermasbtn" id ="boton5">Leer mas...</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card" style="width: 18rem;">
+                <img src="{% static '/images/hollowbodyholdpump-1472220583.gif'%}" class="card-img-top" alt="Hollow body crunch">
+                              <a title="Hollow" href="https://www.youtube.com/watch?v=2fB1R9uWQbw">Video detallado aca!</a> 
+                <div class="card-body">
+                  <h5 class="card-title">Hollow body crunch</h5>
+                  <span class = "hide" id="hideCrunch">
+                  <p class="texto" id="texto6"><b>El hollow body crunch</b> es un movimiento que se enfoca en los abdominales.es un movimiento excelente para trabajar los músculos transverso del abdomen, recto del abdomen, oblicuos, cuádriceps, flexores de la cadera, cara interna de los muslos y erector de la columna. 
+                    También ayuda a fortalecer y estabilizar los músculos centrales y de la parte inferior de la espalda.</p>
+                  </span>
+                  <button class="leermasbtn" id ="boton6">Leer mas...</button>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      
+
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+      -->
+      
+  {% endblock %}

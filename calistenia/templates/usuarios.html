@@ -1,0 +1,45 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{%block content%}
+
+{% if lista_usuarios %}
+<div class="container-sm">
+    <h1 class = "text-white text-center" >Usuarios registrados</h1>
+    <table class="table table-light">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Tema</th>
+            <th scope="col">Mensaje</th>
+          </tr>
+        </thead>
+  {% for usuario in lista_usuarios %}
+   <tbody>
+      <tr>
+        <th scope="row">"{{usuario.id}}"</th>
+        <td><a href ="{{ usuario.id }}">{{usuario.nombre}}</a></td>
+        <td>{{usuario.correo}}</td>
+        <td>{{usuario.telefono}}</td>
+        <td>{{usuario.tema}}</td>
+        <td>{{usuario.mensaje}}</td>
+      </tr>
+    </tbody>
+  
+
+  {% endfor %}
+</table>
+</div>
+
+{% else %}
+  <h3 class ="text-white text-center">¡No hay usuarios registrados!</h3>
+{% endif %}
+
+
+{% endblock %}
+  
+
+  

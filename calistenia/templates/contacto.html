@@ -1,0 +1,40 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Navbar-->
+  <div class="row text-center my-5 justify-content-md-center">
+      <div class="col-sm-6 ">
+      <h2 class="text-center text-white">Formulario de Contacto</h2>
+              <form class="bg-light" id = "contacto" action="{% url 'contacto'%}" method="POST">
+                {% csrf_token %}
+                  <div class="form-group" id="nombre_form" name="nombre_form">
+                    <label for="formGroupExampleInput">Nombre</label>
+                    <input type="text" class="form-control" id="nombreP" name="nombreP" placeholder="Juanito perez">
+                  </div>
+                  <div class="form-group" id="telefono_form" name="telefono_form">
+                    <label for="formGroupExampleInput2">Telefono</label>
+                    <input type="text" class="form-control" id="telefonoP" name="telefonoP" placeholder="12345678">
+                  </div>
+                  <div class="form-group" id="correo_form" name="correo_form">
+                      <label for="formGroupExampleInput2">Correo electrónico</label>
+                      <input type="text" class="form-control" id="correoP" name="correoP" placeholder="hola@ejemplo.com">
+                    </div>
+                    <div class="form-group" id="tema_form" name="tema_form">
+                      <label for="formGroupExampleInput2">Tema</label>
+                      <input type="text" class="form-control" id="temaP" name="temaP"placeholder="Tema">
+                    </div>
+                    <div class="form-group" id="mensaje_form" name="mensaje_form">
+                      <label for="exampleFormControlTextarea1">Mensaje</label>
+                      <input type="text" class="form-control" id="mensajeP" name="mensajeP" placeholder="Escribe tu mensaje" size="400">
+                    </div>
+                    <button type="submit" class="btn btn-success" value="submit">Enviar</button>
+                    
+              </form>
+      </div>		
+  </div>
+
+  </body>
+<h6>Sitio web desarrollado con Bootstrap v5.2.2</h6>
+{%endblock%}

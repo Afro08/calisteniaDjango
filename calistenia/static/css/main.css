@@ -1,0 +1,39 @@
+
+h1{font-family: 'Reggae One', cursive;}
+
+body{background-image:url("../images/zvengod.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+    margin-left: 10px;
+    margin-right: 10px;}
+#nav{opacity: .3;}
+#nav:hover{opacity: 1;}
+#historia{border-style: groove;
+       border-color:red}
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.dominada-bajo{
+    width : 500px;
+    height: 500px;
+    background: url("../images/dominada1.png") no-repeat;
+}
+
+.dominada-alto{
+    width : 500px;
+    height: 500px;
+    background: url("../images/dominada2.png") no-repeat;   
+}
+
+#contador{
+    color:white
+}
+#contarClick{
+    color: white;
+    font-size:350%;
+}

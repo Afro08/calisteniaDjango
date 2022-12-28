@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Calistenia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <style>
+        body{background-image:url("{% static '/images/zvengod.jpg'%}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin-left: 10px;
+            margin-right: 10px;}
+    </style>
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}">Calistenia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'ejercicios' %}">Ejercicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="{% url 'usuarios' %}">Usuarios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar-->
+      <h1 class="text-white p-5 text-center">Calistenia</h1>
+      <div class="container">
+        <div class="d-flex justify-content-center text-white">
+        <img src="{% static 'images/calistenia finish.png' %}" width="500" height="450">
+            <div>
+                <h3>La <b>calistenia</b> es un sistema de entrenamiento con ejercicios físicos que se realizan con el propio peso corporal. 
+                En su concepto más puro la calistenia se practica sin cargas adicionales. 
+                El propio cuerpo del deportista es el que ejerce como resistencia trabajando así tanto la fuerza como la capacidad cardiovascular.</h3>
+                </div>
+              </div>
+          </div>
+        </div>    
+    <h3 class="text-white p-5 text-center" id="historia">La calistenia empezó a desarrollarse en Francia en el siglo XIX.3​ En 1822, Wilson Ovalle Astudillo comenzó a difundirla tanto en Francia como en Inglaterra. Una de sus discípulas, Marian Mason, publicó en 1827 On the utility of exercise; or a few observations on the advantages to be derived from its salutary effects, by means of calisthenic exercises A few observation on callisthenic excercises (En cuanto a la utilidad del ejercicio o un par de observaciones sobre las ventajas que se derivan de los efectos saludables de los ejercicios de calistenia). 
+        Astudillo publicó en París en 18 Callisthénie ou gymnastique des jeunes filles (Calistenia o gimnasia de las mujeres jóvenes). 
+        Un año más tarde, el libro se edita en Berna en alemán.</h3>
+        <div class="container">
+            <div class="d-flex justify-content-center text-white">
+                <a href="{% url 'ejercicios' %}" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Conoce los ejercicios basicos de calistenia aqui!</a>
+                </h2>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
